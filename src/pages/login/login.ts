@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
-import { ApiProvider } from '../../providers/api/api';
+//import { ApiProvider } from '../../providers/api/api';
 import { HomePage } from '../../pages/home/home';
 
 import { Storage } from '@ionic/storage';
@@ -18,26 +18,26 @@ export class LoginPage {
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               private formBuilder: FormBuilder,
-              public apiProvider: ApiProvider,
+              //public apiProvider: ApiProvider,
               private storage: Storage) {
 
     this.credentialsForm = this.formBuilder.group({
 	    email: [''],
-      password: ['']
+      code: ['']
     });
   }
 
   onLogin() {
     if (this.credentialsForm.valid) {
       let email: string = this.credentialsForm.controls['email'].value;
-      let password: string = this.credentialsForm.controls['password'].value;
-      this.apiProvider.login(email, password)
+      let code: string = this.credentialsForm.controls['code'].value;
+      /*this.apiProvider.login(email, password)
       .then(data => {
         if (data['auth'] == true) {
           this.storage.set('token', data['token']);
           this.storage.set('logged', true);
         } else console.log(data);
-      });
+      });*/
       this.redirectToRoot();
     }
   }
