@@ -24,7 +24,7 @@ export class LoginPage {
     this.credentialsForm = this.formBuilder.group({
 	    email: [''],
       code: [''],
-      save: [''],
+      save: [true],
     });
   }
 
@@ -32,6 +32,7 @@ export class LoginPage {
     if (this.credentialsForm.valid) {
       let email: string = this.credentialsForm.controls['email'].value;
       let code: string = this.credentialsForm.controls['code'].value;
+      let save: boolean = this.credentialsForm.controls['save'].value;
       /*this.apiProvider.login(email, password)
       .then(data => {
         if (data['auth'] == true) {

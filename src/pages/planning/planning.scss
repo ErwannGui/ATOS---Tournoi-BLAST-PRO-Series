@@ -1,3 +1,49 @@
 page-planning {
-
+	ion-searchbar{
+		background: transparent!important;
+		input{
+			background-color: rgba(255, 255, 255, 0.8)!important;
+    	border: solid 2px #A23584!important;
+		}
+	}
+	#matchTable{
+		width: 80%;
+		height: 260px;
+		margin: 30px auto 10px;
+		border: solid 1px white;
+		color: white;
+		text-align: center;
+		span{
+			width: 100%;
+			line-height: 260px;
+		}
+	}
+	ion-card{
+		background-color: transparent!important;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6)!important;
+		.card-title{
+			color: white;
+		}
+		.item{
+			color: white;
+			background-color: transparent!important;
+			ion-label{
+				display: flex;
+				.icon-fight{
+					max-width: 50px;
+					max-height: 50px;
+				}
+				div{
+					margin: 0 auto;
+					img{
+						max-width: 50px;
+						max-height: 50px;
+						border-radius: 5px;
+						margin: auto;
+						margin-bottom: 8px;
+					}
+				}
+			}
+		}
+	}
 }

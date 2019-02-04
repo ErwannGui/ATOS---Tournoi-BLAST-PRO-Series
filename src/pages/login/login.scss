@@ -1,6 +1,6 @@
 page-login {
 	.scroll-content{
-		padding-top: 50px!important;
+		padding-top: 60px!important;
 	}
 	img{
 		margin: 25px auto;
@@ -20,5 +20,13 @@ page-login {
     	color: white;
     	padding-left: 8px;
     }
+	}
+	.login-btn{
+		color: white;
+		font-size: 125%;
+		text-transform: uppercase;
+    width: auto;
+    padding: 0 70px;
+    margin: auto;
 	}
 }

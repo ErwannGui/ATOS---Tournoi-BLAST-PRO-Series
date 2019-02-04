@@ -26,14 +26,14 @@
       <ion-col>
         <ion-item>
           <ion-label>Remember me</ion-label>
-          <ion-checkbox [formControl]="credentialsForm.controls['save']" checked></ion-checkbox>
+          <ion-checkbox [formControl]="credentialsForm.controls['save']"></ion-checkbox>
         </ion-item>
       </ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col text-center>
-        <button ion-button block color="secondary"
+        <button class="login-btn" ion-button block color="secondary"
             [disabled]="!credentialsForm.valid"
             (click)="onLogin()">
           Login
