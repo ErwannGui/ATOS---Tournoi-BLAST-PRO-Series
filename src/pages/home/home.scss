@@ -1,4 +1,15 @@
 page-home {
+	.menu-account-icon{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    max-width: 38px;
+    max-height: 38px;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
 	.swiper-slide{
 		display: block;
 	}

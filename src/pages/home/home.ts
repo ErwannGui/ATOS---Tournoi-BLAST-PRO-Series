@@ -11,9 +11,11 @@ export class HomePage {
 
 	barChart: any;
 	amount: number;
+	isVIP: boolean;
 
   constructor(private alertCtrl: AlertController, public navCtrl: NavController) {
   	this.amount = 150;
+  	this.isVIP = true;
   }
 
   presentPrompt() {

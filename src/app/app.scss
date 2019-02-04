@@ -19,9 +19,20 @@
 	background: linear-gradient(to right, #F3B50E, #DA7343);
 }
 
+.menu-inner{
+	.toolbar{
+		min-height: 54px!important;
+		button{
+			position: absolute;
+	    top: 0;
+	    right: 2px;
+		}
+	}
+}
+
 ion-content.main-content{
 	background-color: #101A4C;
-	&:not(.content-login-page){
+	&:not(.no-banner-content){
 		height: calc(100% - 50px);
 	}
 }
