@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 import { Chart } from 'chart.js';
 
 @Component({
@@ -10,10 +10,41 @@ export class HomePage {
 	@ViewChild('barCanvas') barCanvas;
 
 	barChart: any;
+	amount: number;
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(private alertCtrl: AlertController, public navCtrl: NavController) {
+  	this.amount = 150;
   }
+
+  presentPrompt() {
+	  let alert = this.alertCtrl.create({
+	    title: 'Add credits',
+	    subTitle: 'Exchange money for credits.',
+	    message: 'Each credits corresponds to 1$.',
+	    inputs: [
+	      {
+	        name: 'amount',
+	        placeholder: 'Amount'
+	      }
+	    ],
+	    buttons: [
+	      {
+	        text: 'Cancel',
+	        role: 'cancel',
+	        handler: data => {
+	          console.log('Cancel clicked');
+	        }
+	      },
+	      {
+	        text: 'Confirm',
+	        handler: data => {
+	          this.amount = this.amount + parseInt(data.amount);
+	        }
+	      }
+	    ]
+	  });
+	  alert.present();
+	}
 
   ionViewDidLoad() {
 
@@ -25,16 +56,16 @@ export class HomePage {
           label: '# of credits used',
           data: [30, 30, 60, 45],
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)'
+            'rgba(190, 45, 125, 0.2)',
+            'rgba(245, 185, 10, 0.2)',
+            'rgba(190, 45, 125, 0.2)',
+            'rgba(245, 185, 10, 0.2)'
           ],
           borderColor: [
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)'
+            'rgba(190, 45, 125,1)',
+            'rgba(245, 185, 10, 1)',
+            'rgba(190, 45, 125, 1)',
+            'rgba(245, 185, 10, 1)'
           ],
         	borderWidth: 1
       	}]

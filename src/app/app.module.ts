@@ -5,6 +5,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
+import { BottomBannerComponent } from '../components/bottom-banner/bottom-banner';
 import { HomePage } from '../pages/home/home';
 import { ListServicePage } from '../pages/listService/listService';
 import { LoginPage } from '../pages/login/login';
@@ -25,6 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
+    BottomBannerComponent,
     HomePage,
     ListServicePage,
     LoginPage,

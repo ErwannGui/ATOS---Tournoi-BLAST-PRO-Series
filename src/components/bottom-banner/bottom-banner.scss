@@ -1,0 +1,43 @@
+bottom-banner {
+	
+	.bottom-banner {
+	  height: 50px;
+	  max-width: 800px;
+	  margin: 0 auto;
+	  position: absolute;
+	  display: flex;
+	  bottom: 0;
+	  overflow: hidden;
+	  transform: translate3d(0, 0, 0);
+	  background: linear-gradient(to right, #BD2D7D, #A23584);
+	  width: 100%;
+	  div {
+	  	text-align: center;
+		  color: white;
+		  font-size: 125%;
+			font-weight: bold;
+		  width: 100%;
+	  	min-width: 80%;
+		  position: relative;
+		  top: 0;
+		  left: 0;
+		  height: 100%;
+		  transform: translate3d(0, 0, 0);
+			margin: 0 50px;
+		  animation: moveSlideshow 10s linear infinite;
+		  span{
+		  	display: inline-block;
+		  	margin: 0 10px;
+		  	line-height: 50px;
+		  	color: #F3B50E;
+		  }
+		}
+	}
+	  
+
+	@keyframes moveSlideshow {
+	  100% { 
+	    transform: translateX(-200%);
+	  }
+	}
+}

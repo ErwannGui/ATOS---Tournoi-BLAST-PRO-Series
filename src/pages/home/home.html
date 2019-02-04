@@ -14,8 +14,8 @@
       <ion-card>
         <ion-card-content class="amount">
           <span float-left>N° 0548236548</span>
-          <span float-right>150 C</span>
-          <button ion-button float-right color="secondary">
+          <span float-right>{{amount}} C</span>
+          <button ion-button float-right color="secondary" (click)="presentPrompt()">
             <ion-icon float-left name="card"></ion-icon>
             Recharger
           </button>
@@ -57,28 +57,9 @@
           <canvas #barCanvas></canvas>
         </ion-card-content>
       </ion-card>
+      <span style="color: #f4f4f4;">Updated 14 min ago</span>
     </ion-slide>
   </ion-slides>
   
-  <!-- <ion-tabs selectedIndex="0">
-    <ion-tab-bar slot="top">
-
-      <ion-tab-button tab="account">
-        <ion-label>Account</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="details">
-        <ion-label>Tracking</ion-label>
-        <ion-badge>6</ion-badge>
-      </ion-tab-button>
-
-    </ion-tab-bar>
-
-    <ion-tab tab="account">
-      
-    </ion-tab>
-    <ion-tab tab="details">
-      
-    </ion-tab>
-  </ion-tabs> -->
 </ion-content>
+<bottom-banner></bottom-banner>
