@@ -23,7 +23,8 @@ export class LoginPage {
 
     this.credentialsForm = this.formBuilder.group({
 	    email: [''],
-      code: ['']
+      code: [''],
+      save: [''],
     });
   }
 

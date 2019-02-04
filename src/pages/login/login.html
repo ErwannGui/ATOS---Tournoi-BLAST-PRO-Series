@@ -23,6 +23,15 @@
     <br><br>
 
     <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Remember me</ion-label>
+          <ion-checkbox [formControl]="credentialsForm.controls['save']" checked></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
       <ion-col text-center>
         <button ion-button block color="secondary"
             [disabled]="!credentialsForm.valid"
@@ -35,10 +44,10 @@
     <ion-row>
       <ion-col text-center>
         <button ion-button clear color="light" (click)="onForgotPassword()">
-          Forgot your password?
-        </button>
-      </ion-col>
-    </ion-row>
+        Forgot your password?
+      </button>
+    </ion-col>  
+  </ion-row>
 
   </form>
 </ion-content>
