@@ -1,18 +1,10 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Login</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
+<ion-content padding class="main-content">
+  <img src="../../assets/imgs/BLAST_Pro_Series_white.png">
   <form [formGroup]="credentialsForm">
 
     <ion-item>
       <ion-label floating>Email</ion-label>
-      <ion-input [formControl]="credentialsForm.controls['email']"
+      <ion-input class="email" [formControl]="credentialsForm.controls['email']"
           type="email"></ion-input>
     </ion-item>
     
@@ -24,7 +16,7 @@
     
     <ion-item>
       <ion-label floating>Code</ion-label>
-      <ion-input [formControl]="credentialsForm.controls['code']"
+      <ion-input class="code" [formControl]="credentialsForm.controls['code']"
           type="password"></ion-input>
     </ion-item>
 

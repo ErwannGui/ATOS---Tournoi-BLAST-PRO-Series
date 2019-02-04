@@ -1,3 +1,24 @@
-/**/page-login {
-	
+page-login {
+	.scroll-content{
+		padding-top: 50px!important;
+	}
+	img{
+		margin: 25px auto;
+	}
+	ion-item{
+    background-color: transparent!important;
+    .item-inner{
+    	border: none!important;
+    }
+		ion-input.email{
+	  	background-color: #F3B50E!important;
+	  }
+	  ion-input.code{
+	  	background-color: #A23584!important;
+	  }
+    ion-label{
+    	color: white;
+    	padding-left: 8px;
+    }
+	}
 }
