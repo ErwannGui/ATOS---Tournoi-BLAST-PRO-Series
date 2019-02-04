@@ -7,9 +7,9 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ListServicePage {
   selectedItem: any;
-  imgs: Array[];
-  data: Array[];
-  items: Array<{title: string, note: string, icon: string}>;
+  imgs: string[];
+  data: string[];
+  items: Array<{title: string, note: string, img: string}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
