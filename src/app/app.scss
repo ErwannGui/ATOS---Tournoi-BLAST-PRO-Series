@@ -21,5 +21,7 @@
 
 ion-content.main-content{
 	background-color: #101A4C;
-	height: calc(100% - 50px);
+	&:not(.content-login-page){
+		height: calc(100% - 50px);
+	}
 }

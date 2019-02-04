@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { BottomBannerComponent } from '../components/bottom-banner/bottom-banner';
+import { CustomRefresherComponent } from '../components/custom-refresher/custom-refresher';
 import { HomePage } from '../pages/home/home';
 import { ListServicePage } from '../pages/listService/listService';
 import { LoginPage } from '../pages/login/login';
@@ -17,8 +18,6 @@ import { MapPage } from '../pages/map/map';
 import { MatchPage } from '../pages/match/match';
 import { PlanningPage } from '../pages/planning/planning';
 import { SettingPage } from '../pages/setting/setting';
-
-import { ApiProvider } from '../providers/api/api';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -64,7 +63,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ApiProvider
   ]
 })
 export class AppModule {}
