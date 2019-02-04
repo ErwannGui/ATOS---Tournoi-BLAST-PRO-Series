@@ -38,6 +38,7 @@ export class LoginPage {
           this.storage.set('logged', true);
         } else console.log(data);
       });*/
+      this.storage.set('logged', true);
       this.redirectToRoot();
     }
   }
@@ -70,8 +71,9 @@ export class LoginPage {
   }
 
   redirectToRoot() {
-    this.navCtrl.setRoot(HomePage);
-    this.navCtrl.popToRoot();
+    /*this.navCtrl.setRoot(HomePage);
+    this.navCtrl.popToRoot();*/
+    window.location.reload();
   }
 
 }

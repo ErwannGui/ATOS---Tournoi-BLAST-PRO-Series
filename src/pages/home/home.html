@@ -7,12 +7,78 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content padding class="main-content">
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-slides>
+    <ion-slide>
+      <ion-card>
+        <ion-card-content class="amount">
+          <span float-left>N° 0548236548</span>
+          <span float-right>150 C</span>
+          <button ion-button float-right color="secondary">
+            <ion-icon float-left name="card"></ion-icon>
+            Recharger
+          </button>
+        </ion-card-content>
+      </ion-card>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Your transactions</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <div ion-item>
+              <span float-left>Airsoft</span>
+              <span float-right>-60 C</span>
+            </div>
+            <div ion-item>
+              <span float-left>Bar</span>
+              <span float-right>-20 C</span>
+            </div>
+            <div ion-item>
+              <span float-left>Yoga</span>
+              <span float-right>-30 C</span>
+            </div>
+            <div ion-item>
+              <span float-left>Bar</span>
+              <span float-right>-10 C</span>
+            </div>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="graph">
+        <ion-card-header>
+          Distribution of expenses
+        </ion-card-header>
+        <ion-card-content>
+          <canvas #barCanvas></canvas>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  
+  <!-- <ion-tabs selectedIndex="0">
+    <ion-tab-bar slot="top">
+
+      <ion-tab-button tab="account">
+        <ion-label>Account</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="details">
+        <ion-label>Tracking</ion-label>
+        <ion-badge>6</ion-badge>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+
+    <ion-tab tab="account">
+      
+    </ion-tab>
+    <ion-tab tab="details">
+      
+    </ion-tab>
+  </ion-tabs> -->
 </ion-content>

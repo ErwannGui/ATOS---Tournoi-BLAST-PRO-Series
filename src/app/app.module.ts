@@ -8,6 +8,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListServicePage } from '../pages/listService/listService';
 import { LoginPage } from '../pages/login/login';
+import { BetPage } from '../pages/bet/bet';
+import { ContactPage } from '../pages/contact/contact';
+import { DetailsServicePage } from '../pages/details-service/details-service';
+import { DonationPage } from '../pages/donation/donation';
+import { MapPage } from '../pages/map/map';
+import { MatchPage } from '../pages/match/match';
+import { PlanningPage } from '../pages/planning/planning';
+import { SettingPage } from '../pages/setting/setting';
 
 import { ApiProvider } from '../providers/api/api';
 
@@ -20,6 +28,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListServicePage,
     LoginPage,
+    BetPage,
+    ContactPage,
+    DetailsServicePage,
+    DonationPage,
+    MapPage,
+    MatchPage,
+    PlanningPage,
+    SettingPage,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +48,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListServicePage,
-    LoginPage
+    LoginPage,
+    BetPage,
+    ContactPage,
+    DetailsServicePage,
+    DonationPage,
+    MapPage,
+    MatchPage,
+    PlanningPage,
+    SettingPage,
   ],
   providers: [
     StatusBar,

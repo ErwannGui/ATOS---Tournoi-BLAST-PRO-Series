@@ -1,3 +1,24 @@
 page-home {
-
+	.swiper-slide{
+		display: block;
+	}
+	ion-card:first-child:not(.graph){
+		background: linear-gradient(to right, #BD2D7D, #A23584);
+		margin-bottom: 15%;
+	}
+	.amount{
+		padding: 25px;
+		padding-bottom: 48px;
+		color: white;
+		font-size: 125%;
+		font-weight: bold;
+		button{
+			position: absolute;
+	    right: 0;
+	    transform: translateY(50%);
+	    ion-icon{
+	    	padding-right: 10px;
+	    }
+		}
+	}
 }

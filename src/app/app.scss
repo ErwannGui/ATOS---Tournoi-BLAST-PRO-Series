@@ -14,3 +14,11 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-background{
+	background: linear-gradient(to right, #F3B50E, #DA7343);
+}
+
+ion-content.main-content{
+	background-color: #101A4C;
+}
