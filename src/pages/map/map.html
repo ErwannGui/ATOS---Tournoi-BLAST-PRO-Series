@@ -15,6 +15,13 @@
 
 
 <ion-content padding class="main-content">
-
+	<ion-searchbar placeholder="Search a team"></ion-searchbar>
+	<div #map class="map-container" data-tap-disabled="true" (click)="itemTapped($event)"></div>
+	<ion-card *ngIf="selectedService">
+    <ion-card-header>
+      <ion-card-title>Details {{service.title}}</ion-card-title>
+      <span>{{service.time}}</span>
+    </ion-card-header>
+  </ion-card>
 </ion-content>
 <bottom-banner></bottom-banner>

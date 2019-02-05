@@ -16,11 +16,15 @@ page-listService {
   			border: solid 1px #F3B50E!important;
   			padding: 12px!important;
         ion-label{
-          position: absolute;
-          margin: 0;
-          left: 0;
-          bottom: 5px;
-          width: 100%;
+          span{
+            &:not(.vip){
+              position: absolute;
+              margin: 0;
+              left: 0;
+              bottom: 5px;
+              width: 100%;
+            }
+          }
         }
   			img{
   				width: 100%;
@@ -31,5 +35,16 @@ page-listService {
 	}
   .item-details{
     color: white;
+  }
+  .vip-banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background: linear-gradient(to right, #BD2D7D, #A23584);
+    span{
+      margin: auto;
+    }
   }
 }

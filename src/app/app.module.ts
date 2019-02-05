@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
+import { Geolocation } from '@ionic-native/geolocation';
 import { HttpClientModule } from '@angular/common/http';
+import { GoogleMaps } from '@ionic-native/google-maps';
 
 import { MyApp } from './app.component';
 import { BottomBannerComponent } from '../components/bottom-banner/bottom-banner';
@@ -62,7 +64,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    GoogleMaps,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Geolocation,
   ]
 })
 export class AppModule {}

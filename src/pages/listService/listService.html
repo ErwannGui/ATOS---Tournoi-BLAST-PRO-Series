@@ -20,6 +20,10 @@
   </ion-list> -->
   <div *ngIf="!selectedItem" class="service-list" padding>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <div class="vip-banner" *ngIf="item.isVIP">
+        <span class="vip">VIP</span>
+        <span class="vip">-{{item.reduc}}%</span>
+      </div>
       <div class="item-note" item-end>
         <img src="../../assets/imgs/{{item.img}}">
       </div>

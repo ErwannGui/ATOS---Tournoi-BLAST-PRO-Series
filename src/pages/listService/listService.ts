@@ -9,7 +9,7 @@ export class ListServicePage {
   selectedItem: any;
   imgs: string[];
   data: string[];
-  items: Array<{title: string, note: string, img: string}>;
+  items: Array<{title: string, note: string, img: string, isVIP: boolean, reduc: number}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
@@ -23,10 +23,16 @@ export class ListServicePage {
     this.items = [];
     for (let i = 1; i < 6; i++) {
       let random = Math.floor(Math.random() * 5);
+      let vip: boolean = false;
+      if (random%2 == 0) {
+        vip = true;
+      }
       this.items.push({
         title: this.data[random],
         note: 'This is service #' + i,
         img: this.imgs[random],
+        isVIP: vip,
+        reduc: random*10
       });
     }
   }

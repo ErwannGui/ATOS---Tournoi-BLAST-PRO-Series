@@ -1,3 +1,23 @@
 page-map {
-
+	ion-searchbar{
+		background: transparent!important;
+		input{
+			background-color: rgba(255, 255, 255, 0.8)!important;
+    	border: solid 2px #A23584!important;
+		}
+	}
+	.map-container{
+		width: 80%;
+		height: 300px;
+		margin: 30px auto 10px;
+		border: solid 1px #F3B50E;
+		text-align: center;
+	}
+	ion-card{
+		background-color: transparent!important;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6)!important;
+		.card-title{
+			color: white;
+		}
+	}
 }
